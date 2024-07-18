@@ -5,62 +5,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mussie Alemayehu</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
-  <div class="top-container">
-    <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-    <h1>I'm Mussie</h1>
-    <h2>a <span class="pro">pro</span>grammer</h2>
-    <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
-    <img class="mountain" src="images/mountain.png" alt="mountain-img">
-  </div>
-  <div class="middle-container">
-    <div class="profile">
-      <img class="profile-img" src="images/mussie.JPG" alt="">
-      <h2>Hello.</h2>
-      <p>I am Mussie Alemayehu, a computer science student at AAU.</p>
-    </div>
-    <hr>
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="flutter-img" src="https://cdn.iconscout.com/icon/free/png-256/free-flutter-2038877-1720090.png?f=webp" alt="flutter-logo">
-        <h3>Flutter developer</h3>
-        <p>I have been building cross-platform mobile applications for the past year using flutter. Now I have become master of the art 
-          and have the honor of being addressed as a proffesional flutter developer.
-        </p>
-      </div>
-      <div class="skill-row">
-        <img class="python-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="">
-        <h3>Python developer</h3>
-        <p>You can trust me with your life when it comes to python, literally. (Hey, not literally really)</p>
+  <header class="bg-dark text-white py-3">
+    <nav class="container d-flex justify-content-center">
+      <a class="text-white mx-3" href="#introduction">Introduction</a>
+      <a class="text-white mx-3" href="#services">Services</a>
+      <a class="text-white mx-3" href="#projects">Projects</a>
+      <a class="text-white mx-3" href="#about-me">About Me</a>
+      <button id="theme-toggle" class="btn btn-link text-white ml-auto"><i class="fas fa-sun"></i><i class="fas fa-moon ml-2"></i></button>
+    </nav>
+  </header>
+
+  <div class="top-container d-flex align-items-center justify-content-end text-right bg-cover"
+    style="background-image: url('images/hero.png'); height: 90vh;">
+    <div class="container hero-content text-white pr-md-5">
+      <div class="hero-overlay p-4">
+        <p class="display-4 mb-4">Continuous Learner</p>
+        <p class="h2 mb-4">Innovative Software Developer</p>
+        <a href="#" class="btn btn-primary mt-3">GitHub</a>
+        <a href="#" class="btn btn-primary mt-3">LinkedIn</a>
       </div>
     </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>I am only a single click away.</h3>
-      <p>Here is my email, leave a comment or a request and I will get back to you.</p>
-      <a class="btn" href="mailto:mussiea2020@gmail.com">CONTACT ME</a>
-    </div>
   </div>
 
-
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-    <a class="footer-link" href="https://twitter.com/">Twitter</a>
-    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-    <p class="cp-right">© Mussie Alemayehu.</p>
+  <div class="middle-container container my-5">
+    <!-- Your content here -->
   </div>
 
+  <div class="bottom-container container my-5">
+    <!-- Your content here -->
+  </div>
+
+  <footer class="bg-dark text-white py-3 text-center">
+    <!-- Your footer content here -->
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/theme.js"></script>
 </body>
-
+<script src="toggle_theme.js"></script>
 </html>

@@ -1,119 +1,73 @@
+
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --bg-color-light: #FAFAFA;
+    --text-color-light: #333;
+    --bg-color-dark: #121212;
+    --text-color-dark: #EEE;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+  
 body {
-    color: #40514E;
-    margin: 0;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+  
+body.dark-mode {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
 }
 
-h1 {
-    color: #66BFBF;
-    font-size: 6rem;
-    margin: 60px auto 20px;
-    font-family: "Sacramento", cursive;
+.bg-cover {
+    background-size: cover;
+    background-position: center;
 }
 
-h2 {
-    color: #66BFBF;
-    font-size: 2.5rem;
+.hero-content {
+    padding-right: 3rem;
 }
 
-h3 {
-    color: #11999E;
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
 }
 
-p {
-    margin: 0;
+.hero-content p {
+    margin-bottom: 0.5em;
 }
 
-hr {
-    margin: 100px auto;
-    border: #EAF6F6 8px dotted;
-    border-bottom: none;
-    width: 7%;
+.btn-primary {
+    background-color: #3B5998;
+    border-color: #3B5998;
 }
 
-.pro {
-    text-decoration: underline;
+.btn-primary:hover {
+    background-color: #2E4370;
+    border-color: #2E4370;
+}
+  
+#theme-toggle {
+    font-size: 1.5rem;
 }
 
-.top-container {
-    background-color: #EAF6F6;
-}
+@media (max-width: 768px) {
+    .top-container {
+        justify-content: center;
+        text-align: center;
+        padding-right: 0;
+    }
 
-.middle-container {
-    margin: 100px 0;
-}
-
-.top-cloud {
-    position: relative;
-    left: 25%;
-    top: 40px;
-}
-
-.bottom-cloud {
-    position: absolute;
-    left: 20%;
-}
-
-.skill-row {
-    text-align: left;
-    width: 50%;
-    margin: 0 auto 100px;
-    line-height: 2;
-}
-
-.profile-img {
-    width: 100px;
-    border-radius: 50%;
-}
-
-.flutter-img {
-    width: 20%;
-    float: left;
-    padding-right: 20px;
-}
-
-.python-img {
-    width: 20%;
-    float: right;
-    margin: 0 20px;
-    padding-left: 20px;
-}
-
-.contact-me {
-    width: 40%;
-    margin: 100px auto;
-}
-
-.btn {
-    margin: 40px 0;
-    color: white;
-    text-decoration: none;
-    background-color: #66BFBF;
-    border-radius: 6px;
-    padding: 8px 20px;
-    display: inline-block;
-}
-
-.bottom-container {
-    height: 200px;
-    background-color: #66BFBF;
-    padding: 60px;
-}
-
-.footer-link {
-    margin: 0 40px;
-    text-decoration: none;
-    color: #11999E;
-    display: inline-block;
-}
-
-.footer-link:hover {
-    color: #EAF6F6;
-}
-
-.cp-right {
-    margin: 40px 0;
-    color: #EAF6F6;
-    font-size: 12px;
+    .hero-content {
+        padding-right: 0;
+    }
 }
