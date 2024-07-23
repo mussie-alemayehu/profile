@@ -46,37 +46,3 @@
   text-decoration: none;
   color: #ddd;
 }
-/* 
-.hero {
-  background-image: url("../images/hero 1980x720 light 2.png");
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-  color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.5em;
-  margin-bottom: 40px;
-}
-
-.hero a {
-  color: white;
-  font-size: 1.5em;
-  margin: 0 10px;
-}
-
-.hero a:hover {
-  text-decoration: none;
-  color: #ddd;
-} */
