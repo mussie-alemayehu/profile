@@ -1,4 +1,45 @@
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+}
+
+.nav-link {
+  font-size: 1.1em;
+}
+
+.bg-sm-dark {
+  padding: 20px;
+  background-color: #f0f0f0aa;
+  border-radius: 8px;
+}
+
+.badge {
+  margin-top: 10px;
+  padding: 10px;
+  color: rgb(67, 67, 67);
+  background-color: rgb(230, 230, 230);
+  border-radius: 6px;
+}
+
+footer {
+  height: 200px;
+  background-color: #dcdcdcaa;
+}
+
+footer a {
+  color: rgb(138, 138, 138);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: black;
+}
+
 .navbar-nav {
   flex-direction: row;
 }
