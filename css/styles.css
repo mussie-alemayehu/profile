@@ -87,3 +87,26 @@ footer a:hover {
   text-decoration: none;
   color: #ddd;
 }
+
+.skill-icon {
+  max-width: 50px;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 8px 0px;
+}
+
+#flutter-icon {
+  background-color: rgb(196, 230, 242);
+}
+
+#firebase-icon {
+  background-color: rgb(238, 213, 186);
+}
+
+#python-icon {
+  background-color: rgb(207, 230, 174);
+}
+
+#github-icon {
+  background-color: lightgrey;
+}
