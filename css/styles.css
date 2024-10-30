@@ -1,116 +1,116 @@
-
-
-html {
-  scroll-behavior: smooth;
+/* Custom Properties */
+:root {
+  --transition-speed: 0.3s;
 }
 
-.navbar-brand {
-  font-size: 1.5em;
+[data-bs-theme="dark"] {
+  --bs-body-bg: #121212;
+  --bs-body-color: #e0e0e0;
+  --bs-card-bg: #1e1e1e;
+  --bs-card-border-color: #2d2d2d;
 }
 
-.nav-link {
-  font-size: 1.1em;
+/* General Styles */
+body {
+  transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
-.bg-sm-dark {
-  padding: 20px;
-  background-color: #f0f0f0aa;
-  border-radius: 8px;
+/* Navbar Styles */
+.blur-bg {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-.badge {
-  margin-top: 10px;
-  padding: 10px;
-  color: rgb(67, 67, 67);
-  background-color: rgb(230, 230, 230);
-  border-radius: 6px;
+[data-bs-theme="dark"] .blur-bg {
+  background-color: rgba(18, 18, 18, 0.9);
 }
 
-footer {
-  height: 200px;
-  background-color: #dcdcdcaa;
-}
-
-footer a {
-  color: rgb(138, 138, 138);
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: black;
-}
-
-.navbar-nav {
-  flex-direction: row;
-}
-
-.nav-item {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-.nav-link {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
+/* Hero Section */
 .hero {
-  background-image: url('../images/hero 1980x720 light 2.png');
+  height: 80vh;
+  background-image: url('https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?auto=format&fit=crop&q=80');
   background-size: cover;
   background-position: center;
-  height: 80vh;
-  color: black;
-  padding-right: 5%;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
 }
 
 .hero-content {
+  color: white;
   max-width: 600px;
 }
 
-.hero h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
+/* Card Styles */
+.card {
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
 }
 
-.hero p {
-  font-size: 1.5em;
-  margin-bottom: 40px;
+.card:hover {
+  transform: translateY(-5px);
 }
 
-.hero a {
-  color: white;
-  font-size: 1.5em;
-  margin: 0 10px;
+.project-card img {
+  transition: transform var(--transition-speed);
 }
 
-.hero a:hover {
-  text-decoration: none;
-  color: #ddd;
+.project-card img:hover {
+  transform: scale(1.05);
 }
 
+/* Skill Icons */
 .skill-icon {
-  max-width: 50px;
-  border-radius: 8px;
-  padding: 8px;
-  margin: 8px 0px;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
-#flutter-icon {
-  background-color: rgb(196, 230, 242);
+/* Badge Styles */
+.badge {
+  padding: 0.5em 1em;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
-#firebase-icon {
-  background-color: rgb(238, 213, 186);
+/* Social Links */
+.social-links a {
+  transition: transform var(--transition-speed);
 }
 
-#python-icon {
-  background-color: rgb(207, 230, 174);
+.social-links a:hover {
+  transform: translateY(-2px);
 }
 
-#github-icon {
-  background-color: lightgrey;
+/* Dark Mode Specific Styles */
+[data-bs-theme="dark"] .card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) !important;
 }
 
-.fiverr-image {
-  height: 20px;
+[data-bs-theme="dark"] .btn-outline-dark {
+  color: #fff;
+  border-color: #fff;
+}
+
+[data-bs-theme="dark"] .btn-outline-dark:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+  }
+  
+  .hero-content {
+    text-align: center;
+    padding: 0 1rem;
+  }
 }
